@@ -1,3 +1,4 @@
+package consistency;
 public class EventualConsistentData implements ConsistencyLevel {
     @Override
     public String getConsistencyLevel() {

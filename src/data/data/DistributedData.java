@@ -1,3 +1,6 @@
+package data;
+import consistency.ConsistencyLevel;
+
 public class DistributedData {
     private final String content;
     private final ConsistencyLevel consistencyLevel;
@@ -11,7 +14,7 @@ public class DistributedData {
         return content;
     }
 
-    public String getConsistencyLevel() {
-        return consistencyLevel.getConsistencyLevel();
+    public boolean isStrongConsistency() {
+        return consistencyLevel.isStrongConsistency();
     }
 }

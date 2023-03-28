@@ -1,3 +1,5 @@
+
+package consistency;
 public class UnspecifiedConsistencyData implements ConsistencyLevel {
     @Override
     public String getConsistencyLevel() {

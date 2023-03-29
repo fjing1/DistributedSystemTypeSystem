@@ -31,7 +31,7 @@ I was using Gradle:
 
 ./gradlew clean build
 
-3.Run the main.java.Main class in your preferred IDE (i was using IntellJ Idea) or from the command line.
+3.Run the main.Main class in your preferred IDE (i was using IntellJ Idea) or from the command line.
 
 
 Contributing

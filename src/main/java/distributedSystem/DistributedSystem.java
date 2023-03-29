@@ -1,27 +1,25 @@
 package distributedSystem;
 
 import consistency.ConsistencyLevel;
+import distributedData.DistributedData;
 import datastore.DataStore;
 import datastore.InMemoryDataStore;
-import distributedData.DistributedData;
-import main.java.consistency.EventualConsistentData;
 
 public class DistributedSystem<K, V> {
 
-    private final DataStore dataStore;
+    private final DataStore<K, DistributedData<V>> dataStore;
 
     public DistributedSystem() {
-        this.dataStore = (DataStore) new InMemoryDataStore();
+        this.dataStore = new InMemoryDataStore<>();
     }
 
-    public void put(String key, V value, ConsistencyLevel consistencyLevel) {
-        String content = null;
-        DistributedData<V> data = new DistributedData<>(key, value, consistencyLevel, content, consistencyLevel);
-        dataStore.put(key, );
+    public void put(K key, V value, ConsistencyLevel consistencyLevel) {
+        DistributedData<V> data = new DistributedData<>(key, value, consistencyLevel);
+        dataStore.put(key, data);
     }
 
     public V get(K key) {
-        DistributedData<V> data = (DistributedData<V>) dataStore.get(String.valueOf(key));
+        DistributedData<V> data = dataStore.get(key);
         if (data == null) {
             return null;
         }
@@ -29,15 +27,6 @@ public class DistributedSystem<K, V> {
     }
 
     public void delete(K key) {
-        dataStore.delete((String) key);
-    }
-
-    public void storeData(String key1, String value1, EventualConsistentData stronglyConsistentData) {
-    }
-
-    public String fetchData(String key1) {
-    }
-
-    public void deleteData(String key1) {
+        dataStore.delete(key);
     }
 }

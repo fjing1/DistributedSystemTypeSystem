@@ -1,13 +1,14 @@
+package consistency;
 
-package main.java.consistency;
 public class UnspecifiedConsistencyData implements ConsistencyLevel {
+
     @Override
-    public String getConsistencyLevel() {
-        return "Unspecified";
+    public boolean isStronglyConsistent() {
+        return false;
     }
 
     @Override
-    public boolean isStrongConsistency() {
+    public boolean isEventuallyConsistent() {
         return false;
     }
 }

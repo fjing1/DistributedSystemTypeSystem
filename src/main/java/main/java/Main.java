@@ -1,26 +1,31 @@
-package main.java;
+package main;
 
-import main.java.consistency.EventualConsistentData;
-import main.java.consistency.StronglyConsistentData;
-import datastore.DataStore;
-import datastore.InMemoryDataStore;
+import consistency.EventualConsistentData;
+import consistency.StronglyConsistentData;
+import distributedData.DistributedData;
 import distributedSystem.DistributedSystem;
 
-
-
 public class Main {
-    public static <DataStore> void main(String[] args) {
-        DataStore dataStore = (DataStore) new InMemoryDataStore();
-        DistributedSystem distributedSystem = new DistributedSystem(dataStore);
 
+    public static void main(String[] args) {
+        DistributedSystem<String, String> distributedSystem = new DistributedSystem<>();
 
-        distributedSystem.storeData("key1", "value1", new StronglyConsistentData());
-        distributedSystem.storeData("key2", "value2", new EventualConsistentData());
+        // Put data with Strong Consistency
+        distributedSystem.put("key1", "value1", new StronglyConsistentData());
 
-        System.out.println("Key1 data: " + distributedSystem.fetchData("key1") + ", main.java.consistency: " + distributedSystem.getConsistencyLevel("key1"));
-        System.out.println("Key2 data: " + distributedSystem.fetchData("key2") + ", main.java.consistency: " + distributedSystem.getConsistencyLevel("key2"));
+        // Put data with Eventual Consistency
+        distributedSystem.put("key2", "value2", new EventualConsistentData());
 
-        distributedSystem.deleteData("key1");
-        System.out.println("Key1 data after deletion: " + distributedSystem.fetchData("key1"));
+        // Get data
+        String value1 = distributedSystem.get("key1");
+        System.out.println("Value for key1: " + value1); // Output: Value for key1: value1
+
+        String value2 = distributedSystem.get("key2");
+        System.out.println("Value for key2: " + value2); // Output: Value for key2: value2
+
+        // Delete data
+        distributedSystem.delete("key1");
+        String deletedValue = distributedSystem.get("key1");
+        System.out.println("Value for deleted key1: " + deletedValue); // Output: Value for deleted key1: null
     }
 }

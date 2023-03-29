@@ -1,12 +1,14 @@
-package main.java.consistency;
+package consistency;
+
 public class EventualConsistentData implements ConsistencyLevel {
+
     @Override
-    public String getConsistencyLevel() {
-        return "Eventual";
+    public boolean isStronglyConsistent() {
+        return false;
     }
 
     @Override
-    public boolean isStrongConsistency() {
-        return false;
+    public boolean isEventuallyConsistent() {
+        return true;
     }
 }

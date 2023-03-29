@@ -1,23 +1,28 @@
 package datastore;
-import main.java.distributedData.DistributedData;
 
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.HashMap;
+import java.util.Map;
 
-public class InMemoryDataStore implements main.java.datastore.DataStore {
-    private final ConcurrentHashMap<String, DistributedData> storage = new ConcurrentHashMap<>();
+public class InMemoryDataStore<K, V> implements DataStore<K, V> {
+
+    private final Map<K, V> storage;
+
+    public InMemoryDataStore() {
+        storage = new HashMap<>();
+    }
 
     @Override
-    public void put(String key, DistributedData value) {
+    public void put(K key, V value) {
         storage.put(key, value);
     }
 
     @Override
-    public DistributedData get(String key) {
+    public V get(K key) {
         return storage.get(key);
     }
 
     @Override
-    public void delete(String key) {
+    public void delete(K key) {
         storage.remove(key);
     }
 }

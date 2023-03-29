@@ -1,12 +1,12 @@
 # ece654a3, do not copy without consent
 # Distributed System Type System
 
-This project provides a simple pluggable type system for managing data consistency in distributed systems. 
-It allows you to define different consistency levels and store data using a custom data store implementation.
+This project provides a simple pluggable type system for managing data main.java.consistency in distributed systems. 
+It allows you to define different main.java.consistency levels and store data using a custom data store implementation.
 
 ## Features
 
-- Define custom consistency levels for distributed data.
+- Define custom main.java.consistency levels for distributed data.
 - Use the provided in-memory data store or implement your own custom data store.
 - Easily switch between different data store implementations.
 
@@ -31,7 +31,7 @@ I was using Gradle:
 
 ./gradlew clean build
 
-3.Run the Main class in your preferred IDE (i was using IntellJ Idea) or from the command line.
+3.Run the main.java.Main class in your preferred IDE (i was using IntellJ Idea) or from the command line.
 
 
 Contributing

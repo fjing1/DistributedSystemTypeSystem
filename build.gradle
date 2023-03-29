@@ -1,3 +1,7 @@
-public interface ConsistencyLevel {
-    String getConsistencyLevel();
+apply plugin: 'application'
+
+mainClassName = 'main.Main'
+
+run {
+    standardInput = System.in
 }

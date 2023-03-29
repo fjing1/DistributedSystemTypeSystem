@@ -5,19 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f1f0999-1b6e-4866-9aaf-f71b86a8e0bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DistributedSystem/DistributedSystem/DistributedSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastore/datastore/DataStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastore/datastore/InMemoryDataStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ConsistencyLevelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DistributedDataTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DistributedSystemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/InMemoryDataStoreTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/consistency/ConsistencyLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/consistency/ConsistencyLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/consistency/EventualConsistentData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/consistency/EventualConsistentData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/consistency/StronglyConsistentData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/consistency/StronglyConsistentData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/consistency/UnspecifiedConsistencyData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/consistency/UnspecifiedConsistencyData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/DistributedData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/data/DistributedData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DistributedSystem/DistributedSystem/DistributedSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/distributedSystem/DistributedSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/consistency/ConsistencyLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/consistency/ConsistencyLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/consistency/EventualConsistentData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/consistency/EventualConsistentData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/consistency/StronglyConsistentData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/consistency/StronglyConsistentData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/consistency/UnspecifiedConsistencyData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/consistency/UnspecifiedConsistencyData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/data/DistributedData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/distributedData/DistributedData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastore/datastore/DataStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastore/DataStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastore/datastore/InMemoryDataStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastore/InMemoryDataStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,17 +52,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;/Users/felix_productive/IdeaProjects/ECE654A3_dataConsistancy/src/data&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_directory_selection": "/Users/felix_productive/IdeaProjects/ECE654A3_dataConsistancy/src/main/java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/datastore/datastore" />

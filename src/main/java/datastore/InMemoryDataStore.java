@@ -1,6 +1,9 @@
+package datastore;
+import main.java.distributedData.DistributedData;
+
 import java.util.concurrent.ConcurrentHashMap;
 
-public class InMemoryDataStore implements DataStore {
+public class InMemoryDataStore implements main.java.datastore.DataStore {
     private final ConcurrentHashMap<String, DistributedData> storage = new ConcurrentHashMap<>();
 
     @Override

@@ -20,6 +20,14 @@ Strongly Consistent Data          Eventual Consistent Data
 - Define custom main.java.consistency levels for distributed data.
 - Use the provided in-memory data store or implement your own custom data store.
 - Easily switch between different data store implementations.
+## reference and related work
+
+Type Checking in Open Distributed Systems: a Complete Model and its Z Specification 
+https://link.springer.com/chapter/10.1007/978-0-387-35188-9_7
+Type Systems for Distributed Programs:
+Components and Sessions
+https://www.dcs.gla.ac.uk/~ornela/publications/Dardha16.pdf
+
 
 ## Getting Started
 
@@ -53,4 +61,6 @@ Create a new branch for your changes.
 Make your changes and commit them to your branch.
 Push your changes to your forked repository.
 Open a pull request on the original repository to merge your changes.
+
+
 

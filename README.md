@@ -3,7 +3,7 @@
 
 This project provides a simple pluggable type system for managing data main.java.consistency in distributed systems. 
 It allows you to define different main.java.consistency levels and store data using a custom data store implementation.
-##Lattice
+## Lattice
                     Top
                      |
             Unspecified Consistency Data

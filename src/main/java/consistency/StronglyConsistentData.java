@@ -11,12 +11,4 @@ public class StronglyConsistentData implements ConsistencyLevel {
     public boolean isEventuallyConsistent() {
         return false;
     }
-
-
-    @Override
-    public boolean isLessConsistentThan(ConsistencyLevel other) {
-        return other instanceof UnspecifiedConsistencyData;
-    }
-
-
 }

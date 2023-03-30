@@ -3,19 +3,12 @@
 
 This project provides a simple pluggable type system for managing data main.java.consistency in distributed systems. 
 It allows you to define different main.java.consistency levels and store data using a custom data store implementation.
-## Lattice
-                        Top
-                         |
-            Unspecified Consistency Data
-            /                          \
-Strongly Consistent Data        	Eventual Consistent Data
-            \                           /
-                    Bottom
+
 ## Features
 
 - Define custom main.java.consistency levels for distributed data.
 - Use the provided in-memory data store or implement your own custom data store.
-- Able to switch between different data store implementations.
+- Easily switch between different data store implementations.
 
 ## Getting Started
 
@@ -31,7 +24,7 @@ These instructions will help you set up and run the project on your local machin
 1. Clone the repository:
 
 ```bash
-git clone git@github.com:fjing1/ece654a3.git
+git clone https://github.com/yourusername/your-repo-name.git
 
 2. Build the project using your preferred build tool:
 I was using Gradle:

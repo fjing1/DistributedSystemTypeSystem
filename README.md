@@ -42,8 +42,7 @@ These instructions will help you set up and run the project on your local machin
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/fjing1/DistributedSystemTypeSystem.git
 
 2. Build the project using your preferred build tool:
 I was using Gradle:
